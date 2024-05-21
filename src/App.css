@@ -1,38 +1,294 @@
-.App {
-  text-align: center;
+
+
+.section_padding {
+  padding: 2rem 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.footer {
+  background-color: beige;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sb__footer {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/* .sb__footer-links{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  text-align: left;
+  margin-bottom: 2rem;
+} */
+.socialmedia {
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+  line-height: 15px;
   color: white;
+  font-weight: 600;
+  right: 14px;
+}
+.socialmedia p {
+  height: 0%;
+  font-size: 15px;
+  /* line-height: 15px; */
+  color: white;
+  font-weight: 600;
+}
+.sb__footer-links_div {
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 0.9rem;
+  font-size: 13px;
+  line-height: 14px;
+  color: whitesmoke;
+  justify-content: flex-end;
+  float: right;
+}
+.sb__footer-links_divv {
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 0.9rem;
+  font-size: 13px;
+  line-height: 20px;
+  color: white;
+  font-weight: 400;
+  float: right;
 }
 
-.App-link {
-  color: #61dafb;
+.sb__footer-links_div p {
+  font-size: 14px;
+  line-height: 15px;
+  margin: 0.3rem 1;
+  cursor: pointer;
+  display: flex;
+  display: flex;
+  align-items: flex-start;
+  vertical-align: top;
+  /* align-content: center; */
+  /* position: absolute; */
+}
+/* .sb__footer-below {
+  display: flex;
+  font-size: 15px;
+  /* flex-direction: row; */
+/* align-content: center;
+  left: 20px; */
+/* position: absolute; */
+/* color: black;
+  /* display: flex; */
+
+*/
+/* } */ */
+.sb__footer-below-links p {
+  font-size: 15px;
+  line-height: 15px;
+  margin-left: 2rem;
+  color: white;
+  font-weight: 400;
+  display: flex;
+  align-items: flex-start;
+}
+.sb__footer-copyright p {
+  font-size: 14px;
+  line-height: 15px;
+  color: white;
+  font-weight: 400;
+  /* align-content: center; */
+  justify-content: flex-end;
+}
+.sb__footer-below-links {
+  display: flex;
+  justify-content: flex-end;
+}
+.sb__footer-copyright {
+  display: flex;
+  justify-content: flex-end;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card_image{
+  width: 300px; 
+  height: auto;
+ /* justify-content: space-between; */
+ /* object-fit: cover;
+   */
+}
+.card{
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; 
+  background-color: gray;
+}
+.card_header {
+  font-family:   Arial, sans-serif;   /* Use a unique font */
+  font-size: 14px; /* Adjust font size */
+  color: white; /* Set font color */
+  /* text-transform: uppercase; Transform text to uppercase */
+  letter-spacing: 1px; /* Add spacing between letters */
+  line-height: 2; /* Adjust line height */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Container for the carousel */
+.carousel-container {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+/* Individual carousel item */
+.carousel-item {
+  flex: 0 0 auto; /* Prevent items from growing to fill available space */
+  width: 200px; /* Adjust width of each item as needed */
+  margin-right: 10px; /* Adjust spacing between items as needed */
+}
+
+/* Image inside carousel item */
+.carousel-item img {
+  max-width: 100%; /* Ensure images don't exceed the width of their container */
+  height: auto; /* Maintain aspect ratio of images */
+}
+.top{
+  font-size: large;
+  flex-direction: row;
+  font-family: 'Roboto', sans-serif;
+  
+}
+.Button{
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #808080; /* Gray color */
+  color: #fff; /* White color for text */
+}
+.card_header{
+  background-color: lightgray;
+  color: #fff;
+  border-radius: 8px 8px 0 0;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 500px;
+
+}
+.card_book{
+  width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  margin: 20px;
+  background-color: gray;
+}
+.login_user{
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 100px;
+  background-color: rgb(244, 219, 199);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+  margin-bottom: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+ 
+
+}
+.Login_back{
+  height: 900px;
+  width: auto;
+  background-image: url("https://pearlsevencosmetics.com/wp-content/uploads/2022/08/land-background-5-1024x629-1.jpeg");
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center;
+}
+.carousel-item {
+  display: flex; /* Display items horizontally */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  position: relative;
+  min-height: 500px;
+}
+.carousel-item img {
+  height: 500px;
+  opacity: 0.95;
+  z-index: 1;
+}
+.carousel-container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 800px; /* Adjust height as needed */
+  background-image: url("https://wallpapers.com/images/featured/light-pink-background-jvh44qngvii3xuju.jpg"); 
+}
+/* MakeupClassesTimetable.css */
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  display: flex;
+  justify-content: center;
+}
+
+.th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.th {
+  background-color: #f2f2f2;
+}
+
+/* BlushAndBrush.css */
+
+.studio-container {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.studio-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  color: #ff69b4; /* Pink color */
+  margin-bottom: 20px;
+}
+
+.studio-description {
+  font-size: 18px;
+  margin-bottom: 30px;
+ justify-content:center;
+   font-size:20px;
+   color: black;
+   letter-spacing: 2px;
+  
+}
+
+.studio-services {
+  border-top: 2px solid #ccc;
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+
+.studio-services h2 {
+  font-size: 24px;
+}
+
+.studio-services ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.studio-services li {
+  font-size: 16px;
+  margin-bottom: 10px;
 }

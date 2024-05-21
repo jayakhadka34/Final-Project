@@ -1,13 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React, { Suspense } from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import reportWebVitals from "./reportWebVitals";
+import { RouterProvider } from "react-router-dom";
+import { MainRouter } from "./component/router/MainRouter";
+import { Provider } from "react-redux";
+import { PersistGate } from "redux-persist/integration/react";
+import Store, { persistor } from "./component/redux/store";
+import { AppContextProvier } from "./component/utiles/ContextApi";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={Store}>
+      <PersistGate loading={"loading..."} persistor={persistor}>
+         <AppContextProvier>
+         <RouterProvider router={MainRouter}/>
+         </AppContextProvier>
+      </PersistGate>
+    </Provider>
   </React.StrictMode>
 );
 

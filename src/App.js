@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+// import Carousel from "./component/dashboard/Carousel";
+// const slides =[
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
+// ]
+// export default function App({
+//     return(
+//         <main className="App">
+//         <div className="max-w-lg">
+//         <Carousel>
+//         {slides.map((i)=>(
+//             <img src={s}/>
+//         ))}
+//         </Carousel>
+//         </div></main>
+//     )
+// })
